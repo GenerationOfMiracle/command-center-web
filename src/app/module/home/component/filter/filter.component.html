@@ -1,0 +1,55 @@
+<div class="filters">
+    <button
+      class="filter-btn"
+      [class.active-btn]="isActive"
+      nzType="primary"
+      (click)="open()"
+    >
+      <span nz-icon nzType="filter" nzTheme="outline"></span>
+      Filters
+    </button>
+    @if(isActive){
+    <div class="filter-title">Research unit:</div>
+    }
+    <ng-container *ngFor="let option of checkOptionsOne; let i = index">
+      <nz-tag
+        *ngIf="option.checked"
+        nzMode="closeable"
+        (nzOnClose)="onClose($event, i)"
+        id="{{ i }}"
+        >{{ option.label }}</nz-tag
+      >
+    </ng-container>
+  </div>
+  <nz-drawer
+    [nzClosable]="false"
+    [nzVisible]="visible"
+    nzPlacement="right"
+    nzTitle="Filters"
+    (nzOnClose)="close()"
+  >
+    <ng-container *nzDrawerContent>
+      <div>
+        <label>
+          <strong>Research Unit</strong>
+        </label>
+      </div>
+      <div>
+        <label
+          nz-checkbox
+          [(ngModel)]="allChecked"
+          (ngModelChange)="updateAllChecked()"
+          [nzIndeterminate]="indeterminate"
+        >
+          All
+        </label>
+      </div>
+      <ng-container *ngIf="checkOptionsOne.length > 0">
+          <nz-checkbox-group
+          [(ngModel)]="checkOptionsOne"
+          (ngModelChange)="updateSingleChecked()"
+          ></nz-checkbox-group>
+        </ng-container>
+    </ng-container>
+  </nz-drawer>
+

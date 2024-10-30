@@ -1,0 +1,171 @@
+{
+    "title": "Portfolio Overview",
+    "alert": {
+      "message": "Regulatory dropped to 57% overall, signaling compliance risks. Monitor Respiratory / Immunology, which is also showing declines.",
+      "type": "warning",
+      "color": "#ff9900"
+    },
+    "healthScores": [
+      {
+        "category": "Overall",
+        "currentScore": 79,
+        "previousScore": 81,
+        "color": "#2ecc71"
+      },
+      {
+        "category": "Finance",
+        "currentScore": 69,
+        "previousScore": 77,
+        "color": "#e74c3c"
+      },
+      {
+        "category": "Ops",
+        "currentScore": 85,
+        "previousScore": 83,
+        "color": "#2ecc71"
+      },
+      {
+        "category": "Quality",
+        "currentScore": 88,
+        "previousScore": 86,
+        "color": "#2ecc71"
+      },
+      {
+        "category": "Safety",
+        "currentScore": 95,
+        "previousScore": 92,
+        "color": "#2ecc71"
+      },
+      {
+        "category": "Regulatory",
+        "currentScore": 57,
+        "previousScore": 65,
+        "color": "#e74c3c"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Emerging Markets",
+        "scores": [
+          {
+            "category": "Overall",
+            "currentScore": 85,
+            "previousScore": 72,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Finance",
+            "currentScore": 96,
+            "previousScore": 97,
+            "color": "#e74c3c"
+          },
+          {
+            "category": "Ops",
+            "currentScore": 86,
+            "previousScore": 84,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Quality",
+            "currentScore": 99,
+            "previousScore": 89,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Safety",
+            "currentScore": 99,
+            "previousScore": 98,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Regulatory",
+            "currentScore": 45,
+            "previousScore": 35,
+            "color": "#2ecc71"
+          }
+        ]
+      },
+      {
+        "title": "Oncology",
+        "scores": [
+          {
+            "category": "Overall",
+            "currentScore": 84,
+            "previousScore": 80,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Finance",
+            "currentScore": 70,
+            "previousScore": 70,
+            "color": "#e74c3c"
+          },
+          {
+            "category": "Ops",
+            "currentScore": 90,
+            "previousScore": 90,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Quality",
+            "currentScore": 88,
+            "previousScore": 88,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Safety",
+            "currentScore": 95,
+            "previousScore": 95,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Regulatory",
+            "currentScore": 75,
+            "previousScore": 75,
+            "color": "#2ecc71"
+          }
+        ]
+      },
+      {
+        "title": "Respiratory / Immunology",
+        "scores": [
+          {
+            "category": "Overall",
+            "currentScore": 58,
+            "previousScore": 55,
+            "color": "#e74c3c"
+          },
+          {
+            "category": "Finance",
+            "currentScore": 40,
+            "previousScore": 37,
+            "color": "#e74c3c"
+          },
+          {
+            "category": "Ops",
+            "currentScore": 80,
+            "previousScore": 80,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Quality",
+            "currentScore": 76,
+            "previousScore": 76,
+            "color": "#2ecc71"
+          },
+          {
+            "category": "Safety",
+            "currentScore": 45,
+            "previousScore": 67,
+            "color": "#e74c3c"
+          },
+          {
+            "category": "Regulatory",
+            "currentScore": 50,
+            "previousScore": 50,
+            "color": "#e74c3c"
+          }
+        ]
+      }
+    ]
+  }

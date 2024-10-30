@@ -1,0 +1,47 @@
+nz-content {
+    margin-top: 1px;
+}
+
+.inner-content {
+    padding: 24px;
+    background: #fff;
+    min-height: 120px;
+}
+
+
+nz-header {
+    background: #fff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #eb8c34;
+    background-color: #eb8c34;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    max-width: 300px;
+    max-height: 40px;
+    flex-grow: 1;
+    padding-right: 25px;
+}
+
+nz-content {
+    margin-top: 1px;
+}
+
+.inner-content {
+    padding: 24px;
+    background: #fff;
+    min-height: 120px;
+}
+
+.accordion-margin {
+    margin: 20px;
+}

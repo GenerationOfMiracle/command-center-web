@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #27A5A5;
+    border-color: #27A5A5;
+  }
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color:#27A5A5;
+  }
+  .ant-drawer-header{
+    border-bottom:none;
+  }

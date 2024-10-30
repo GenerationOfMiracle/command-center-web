@@ -1,0 +1,26 @@
+.layout {
+    min-height: 100vh;
+}
+
+.logo {
+    height: 30px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 5px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    cursor: pointer;
+    min-height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #575757;
+}

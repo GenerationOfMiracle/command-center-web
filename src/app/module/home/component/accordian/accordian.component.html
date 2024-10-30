@@ -1,0 +1,33 @@
+<nz-collapse>
+    <nz-collapse-panel [nzHeader]="headerTemplate" [nzActive]="false">
+        <div>
+            <p>hello</p>
+        </div>
+    </nz-collapse-panel>
+</nz-collapse>
+
+<ng-template #headerTemplate>
+    <div style="display: flex; flex-direction: column;">
+        <div style="font-size: x-large; font-weight: bold; margin-bottom: 30px;">{{data.title}}</div>
+        <div style="display: flex;">
+            <div style="margin-right: 50px; flex-shrink: 0;">
+                <app-card [value]="data.alert"></app-card>
+            </div>
+            <div style="display: flex; flex-direction: column; flex-grow: 1;">
+                <div style="display: flex; margin-bottom: 10px;">
+                    <div style="margin-top: 10px; color: #7a7d7b; font-size: larger; font-weight: 500;">{{data.title}}</div>
+                </div>
+                <div style="display: flex; justify-content:space-between">
+                    <div *ngFor="let score of data.healthScores" style="margin-right: 20px;">
+                        <div style="font-size: 15px; font-weight: 500;">{{score.category}}</div>
+                        <div style="display: flex; align-items: center;">
+                            <div style="font-size: x-large; font-weight: bold; margin-right: 10px;">{{score.currentScore}}%</div>
+                            <nz-progress [nzPercent]="100" nzType="circle" [nzWidth]="15" [nzShowInfo]="false" nzStrokeColor="{{score.color}}"></nz-progress>
+                        </div>
+                        <div style="font-size: 15px; color: #7a7d7b;">Prev. Month: <strong>{{score.previousScore}}%</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
